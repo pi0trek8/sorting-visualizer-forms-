@@ -1,0 +1,10 @@
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\bin\Debug\Sorting Visualizer Forms.exe.config
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\bin\Debug\Sorting Visualizer Forms.exe
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\bin\Debug\Sorting Visualizer Forms.pdb
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\obj\Debug\Sorting Visualizer Forms.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\obj\Debug\Sorting_Visualizer_Forms.Form1.resources
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\obj\Debug\Sorting_Visualizer_Forms.Properties.Resources.resources
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\obj\Debug\Sorting Visualizer Forms.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\obj\Debug\Sorting Visualizer Forms.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\obj\Debug\Sorting Visualizer Forms.exe
+C:\Users\Admin\source\repos\Sorting Visualizer Forms\Sorting Visualizer Forms\obj\Debug\Sorting Visualizer Forms.pdb
