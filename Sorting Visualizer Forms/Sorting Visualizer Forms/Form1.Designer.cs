@@ -85,10 +85,13 @@ namespace Sorting_Visualizer_Forms
             // 
             // pictureBox
             // 
+            this.pictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox.Location = new System.Drawing.Point(72, 70);
+            this.pictureBox.Location = new System.Drawing.Point(63, 83);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(1238, 587);
+            this.pictureBox.Size = new System.Drawing.Size(1250, 608);
             this.pictureBox.TabIndex = 7;
             this.pictureBox.TabStop = false;
             // 

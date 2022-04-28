@@ -54,7 +54,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IStartEngine.cs" />
+    <Compile Include="InsertionSort.cs" />
+    <Compile Include="ISortEngine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomArray.cs" />
