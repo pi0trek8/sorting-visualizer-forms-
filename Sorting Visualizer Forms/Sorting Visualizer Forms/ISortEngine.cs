@@ -9,15 +9,6 @@ namespace Sorting_Visualizer_Forms
 {
     interface ISortEngine
     {
-
-
-
-        void nextStep();
-
-        bool checkIfSorted();
-
-        void reDraw();
-
-
+        void sort();
     }
 }

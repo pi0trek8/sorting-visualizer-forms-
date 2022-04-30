@@ -33,8 +33,8 @@ namespace Sorting_Visualizer_Forms
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.btnSort = new System.Windows.Forms.Button();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -63,25 +63,25 @@ namespace Sorting_Visualizer_Forms
             this.comboBox1.Size = new System.Drawing.Size(150, 24);
             this.comboBox1.TabIndex = 3;
             // 
-            // button1
+            // btnReset
             // 
-            this.button1.Location = new System.Drawing.Point(299, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 34);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "reset";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnReset.Location = new System.Drawing.Point(299, 12);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(107, 34);
+            this.btnReset.TabIndex = 4;
+            this.btnReset.Text = "reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // button2
+            // btnSort
             // 
-            this.button2.Location = new System.Drawing.Point(434, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 34);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "sort";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSort.Location = new System.Drawing.Point(439, 12);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(111, 34);
+            this.btnSort.TabIndex = 6;
+            this.btnSort.Text = "sort";
+            this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
             // 
             // pictureBox
             // 
@@ -101,8 +101,8 @@ namespace Sorting_Visualizer_Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1379, 724);
             this.Controls.Add(this.pictureBox);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSort);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -118,8 +118,8 @@ namespace Sorting_Visualizer_Forms
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.Button btnSort;
         private System.Windows.Forms.PictureBox pictureBox;
     }
 }

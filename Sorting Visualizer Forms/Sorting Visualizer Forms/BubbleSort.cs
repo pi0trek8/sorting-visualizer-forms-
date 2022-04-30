@@ -15,6 +15,8 @@ namespace Sorting_Visualizer_Forms
         Brush whiteBrush = new SolidBrush(Color.White);
         Brush blackBrush = new SolidBrush(Color.Black);
 
+        private Drawer drawer; 
+
         public BubbleSort(int[] arrayToSort, Graphics graphicPanel, int panelHeight)
         {
             this.arrayToSort = arrayToSort;
@@ -22,26 +24,18 @@ namespace Sorting_Visualizer_Forms
             this.panelHeight = panelHeight;
         }
 
-        public void nextStep()
+        public void sort()
         {
-            for (int i = 0; i < arrayToSort.Length - 1; i++)
-            {
-                if (arrayToSort[i] > arrayToSort[i + 1])
+            while(!isSorted){
+                for (int i = 0; i < arrayToSort.Length - 1; i++)
                 {
-                    swapValues(i);
+                    if (arrayToSort[i] > arrayToSort[i + 1])
+                    {
+                        swapValues(i);
+                    }
                 }
+                isSorted = checkIfSorted();
             }
-        }
-
-        public void reDraw()
-        {
-            Drawer drawer = new Drawer(graphicPanel);
-            drawer.drawBars(arrayToSort, panelHeight);
-        }
-
-        public void sort(int[] arrayToSort, Graphics graphicPanel, int panelHeight)
-        {             
-            
         }
 
         public bool checkIfSorted()
@@ -55,15 +49,14 @@ namespace Sorting_Visualizer_Forms
 
         private void swapValues(int i)
         {
+            drawer = new Drawer(graphicPanel);
+
             int temporary = arrayToSort[i];
             arrayToSort[i] = arrayToSort[i + 1];
             arrayToSort[i + 1] = temporary;
 
-            graphicPanel.FillRectangle(blackBrush, i, 0, 1, panelHeight);
-            graphicPanel.FillRectangle(blackBrush, i + 1, 0, 1, panelHeight);
-
-            graphicPanel.FillRectangle(whiteBrush, i, panelHeight - arrayToSort[i], 1, panelHeight);
-            graphicPanel.FillRectangle(whiteBrush, i + 1, panelHeight - arrayToSort[i + 1], 1, panelHeight);
+            drawer.drawBar(arrayToSort, i, panelHeight);
+            drawer.drawBar(arrayToSort, i + 1, panelHeight);
         }
     }
 }

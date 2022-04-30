@@ -23,5 +23,21 @@ namespace Sorting_Visualizer_Forms
                 graphicPanel.FillRectangle(new SolidBrush(Color.White), i, panelHeight - arrayToSort[i], 1, panelHeight);
             }
         }
+
+
+        public void reDraw(int[] arrayToSort, int panelHeight){
+
+            for (int i = 0; i < arrayToSort.Length; i++)
+            {
+                graphicPanel.FillRectangle(new SolidBrush(Color.Black), i, 0, 1, panelHeight);
+                graphicPanel.FillRectangle(new SolidBrush(Color.White), i, panelHeight - arrayToSort[i], 1, panelHeight);
+            }
+           
+        }
+
+        public void drawBar(int[] arrayToSort, int position, int height){
+            graphicPanel.FillRectangle(new SolidBrush(Color.Black), position, 0, 1, height);
+            graphicPanel.FillRectangle(new SolidBrush(Color.White), position, height - arrayToSort[position], 1, height);
+        }
     }
 }

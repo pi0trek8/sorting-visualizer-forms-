@@ -10,36 +10,28 @@ namespace Sorting_Visualizer_Forms
     class InsertionSort : ISortEngine
     {
 
-        private bool isSorted = false;
         private int[] arrayToSort;
-        private Graphics panelGraphic;
+        private Graphics graphicPanel;
         private int panelHeight;
-        Brush whiteBrush = new SolidBrush(Color.White);
-        Brush blackBrush = new SolidBrush(Color.Black);
 
-        public bool checkIfSorted()
+        private Drawer drawer; 
+   
+
+        public InsertionSort(int[] arrayToSort, Graphics graphicPanel, int panelHeight)
         {
-            throw new NotImplementedException();
+            this.arrayToSort = arrayToSort;
+            this.graphicPanel = graphicPanel;
+            this.panelHeight = panelHeight;
         }
 
-        public void nextStep()
-        {
-            throw new NotImplementedException();
-        }
+       
 
-        public void reDraw()
-        {
-            throw new NotImplementedException();
-        }
+       
 
-        public void sort(int[] arrayToSort, Graphics  graphicPanel, int panelHeight)
+        public void sort()
         {
             int size = arrayToSort.Length;
-
-            this.arrayToSort = arrayToSort;
-            this.panelGraphic = graphicPanel;
-            this.panelHeight = panelHeight;
-
+            drawer = new Drawer(graphicPanel);
 
             for (int i = 0; i<size; i++){
                 int key = arrayToSort[i];
@@ -47,16 +39,15 @@ namespace Sorting_Visualizer_Forms
 
                 while(j>=0 && key <arrayToSort[j]){
                     arrayToSort[j + 1] = arrayToSort[j];
-                    j--;
-
-                    graphicPanel.FillRectangle(blackBrush, i, 0, 1, panelHeight);
-                    graphicPanel.FillRectangle(blackBrush, i + 1, 0, 1, panelHeight);
-
-                    graphicPanel.FillRectangle(whiteBrush, i, panelHeight - arrayToSort[i], 1, panelHeight);
-                    graphicPanel.FillRectangle(whiteBrush, i + 1, panelHeight - arrayToSort[i + 1], 1, panelHeight);
+                    --j;
+                    drawer.drawBar(arrayToSort, j, panelHeight);
+                    drawer.drawBar(arrayToSort, j - 1, panelHeight);
                 }
                 arrayToSort[j + 1] = key;
+
+                
             }
         }
+
     }
 }
